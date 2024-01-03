@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="startSub">
+        <button id="startSubBtn" class="customBtn">
+          Start Your Subscription
+        </button>
+      </div>
+      <div id="modalContainer">
+        <dialog id="modal1">
+          <div class="modalHeader">
+            Let Us Get To Know You
+            <div class="closeModal">
+              <img src="/assets/close.png" alt="" height="15px" />
+            </div>
+          </div>
+          <div class="modalCard card">
+            <div class="card-body">
+              <p class="card-title">Which Drink Do You Prefer?</p>
+              <div id="card1">
+                <div class="d-inline-block">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="coffeeswitch"
+                    checked
+                  />
+                  <label class="label1 d-inline-block" for="coffeeswitch"
+                    >Coffee</label
+                  >
+                </div>
+                <div class="d-inline-block">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="teaswitch"
+                  />
+                  <label class="label1 d-inline-block" for="teaswitch"
+                    >Tea</label
+                  >
+                </div>
+                <div id="val1" class="d-inline-block">
+                  <img
+                    src="/assets/exclamation-mark.png"
+                    alt=""
+                    height="25px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modalCard card">
+            <div class="card-body">
+              <p class="card-title">How Do You Like Your Beverage Prepared?</p>
+              <div id="card2">
+                <div class="d-inline-block">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="diy"
+                    checked
+                  />
+                  <label class="label2 d-inline-block" for="diy"
+                    >Do It Yourself</label
+                  >
+                </div>
+                <div class="d-inline-block">
+                  <input class="form-check-input" type="checkbox" id="rtd" />
+                  <label class="label2" for="rtd">Ready To Drink</label>
+                </div>
+                <div id="val2" class="d-inline-block">
+                  <img
+                    src="/assets/exclamation-mark.png"
+                    alt=""
+                    height="25px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modalCard card">
+            <div class="card-body">
+              <p class="card-title">Do You Like Flavored Beverages?</p>
+              <div id="card3">
+                <div class="d-inline-block">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="flavory"
+                    checked
+                  />
+                  <label class="label3 d-inline-block" for="flavory">Yes</label>
+                </div>
+                <div class="d-inline-block">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    id="flavorn"
+                  />
+                  <label class="label3 d-inline-block" for="flavorn">No</label>
+                </div>
+                <div id="val3" class="d-inline-block">
+                  <img
+                    src="/assets/exclamation-mark.png"
+                    alt=""
+                    height="25px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modalCard card">
+            <div class="card-body">
+              <p class="card-title">How Many Cups Per Day Would You Like?</p>
+              <div id="card4">
+                <label for="customRange2"
+                  ><p><span id="cuprangelabel">1</span> Cups</p>
+                </label>
+                <input
+                  id="cuprange"
+                  type="range"
+                  min="1"
+                  max="5"
+                  id="customRange2"
+                  value="0"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modalFooter">
+            <button
+              id="submit1"
+              class="customBtn d-inline-block card-title submit1"
+            >
+              Submit
+            </button>
+            <div id="validate" class="d-inline-block">
+              <img
+                class="d-inline-block"
+                src="/assets/exclamation-mark.png"
+                alt=""
+                height="25px"
+              />
+              <p class="d-inline-block text-red">
+                Please Make Proper Selections
+              </p>
+            </div>
+          </div>
+        </dialog>
+
+        <div class="modalContainer">
+          <dialog id="modal2">
+            <div class="modal-content border border-light-subtle">
+              <div class="modalHeader">
+                Just To Confirm
+                <div class="closeModal2">
+                  <img src="/assets/close.png" alt="" height="15px" />
+                </div>
+              </div>
+              <div class="modalCard card">
+                <div class="card-body">
+                  <p class="card-text">
+                    You Prefer
+                    <span id="op1" class="card-title">Coffee</span>.
+                  </p>
+                  <p class="card-text">
+                    You Want It
+                    <span id="op2" class="card-title">DIY</span> Style.
+                  </p>
+                  <p class="card-text">
+                    You Prefer Your Beverages
+                    <span id="op3" class="card-title">Flavored</span>.
+                  </p>
+                  <p class="card-text">
+                    You Drink
+                    <span id="op4" class="card-title">1</span> Cup Per Day.
+                  </p>
+                </div>
+              </div>
+              <div class="modalFooter">
+                <button
+                  id="form-submit"
+                  class="customBtn d-inline-block card-title form-submit"
+                >
+                  Correct
+                </button>
+                <button
+                  id="changeBtn"
+                  class="customBtn2 d-inline-block card-title changeBtn"
+                >
+                  Change Your Selection
+                </button>
+              </div>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

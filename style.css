@@ -1,0 +1,302 @@
+.card-title {
+    font-weight: bold;
+}
+
+.customBtn {
+    border: 1px solid #b19d56;
+    box-shadow: 0px 0px 20px #b19d56, 0px 0px 20px #000000 inset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.customBtn:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px #b19d56, 0px 0px 25px #000000 inset;
+    text-shadow: 0px 0px 5px #b19d56;
+}
+
+.customBtn2 {
+    border: 1px solid #b19d56;
+    box-shadow: 0px 0px 20px #ffffff, 0px 0px 20px #b19d56 inset;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease;
+    margin: 0 0 0 25px;
+}
+
+.customBtn2:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 0px 30px #ffffff, 0px 0px 25px #b19d56 inset;
+    text-shadow: 0px 0px 5px #b19d56;
+}
+
+.card {
+    border: 1px solid #b19d56;
+    box-shadow: 0px 0px 10px #b19d56, 0px 0px 20px #000000 inset;
+}
+
+.modal-title {
+    color: #b19d56 !important;
+}
+
+.card-text span {
+    color: #b19d56;
+}
+
+input[type='range'] {
+    overflow: hidden;
+    width: 80px;
+    appearance: none;
+    background-color: #b19d5650;
+    border-radius: 20px;
+    width: 100%;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 12px;
+    -webkit-appearance: none;
+    color: #b19d56;
+    margin-top: -1px;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    width: 12px;
+    -webkit-appearance: none;
+    height: 12px;
+    cursor: pointer;
+    background: #ffffff;
+    box-shadow: -400px 0 0 395px #b19d56;
+    border-radius: 50%;
+}
+
+input[type='range']:focus {
+    border-color: #b19d56;
+    box-shadow: 0px 0px 3px 3px #b19d5675;
+}
+
+#validate,
+#val1,
+#val2,
+#val3 {
+    opacity: 0;
+    position: relative;
+    top: 7px;
+    margin-left: 20px;
+}
+
+#validate {
+    opacity: 0;
+    position: relative;
+    top: 7px;
+    margin-left: 40px;
+}
+
+.text-red {
+    color: #e2574c;
+    font-weight: bold;
+    position: relative;
+    bottom: 7px;
+    margin-left: 10px;
+}
+
+/* New CSS For Squarespace */
+body {
+    background-color: black;
+}
+.startSub {
+    width: 100vw;
+    text-align: center;
+    position: fixed;
+    bottom: 5%;
+}
+
+#startSubBtn {
+    width: 80vw;
+    height: 35px;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+
+#modal1,
+#modal2 {
+    background-color: #212529;
+    color: #cccccc;
+    border: 1px solid #cccccc;
+    width: 40vw;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #b19d56;
+}
+
+#modal1::backdrop,
+#modal2::backdrop {
+    background: #00000085;
+}
+
+dialog[open] {
+    animation: myFadeIn .5s ease normal;
+}
+
+@keyframes myFadeIn {
+    from {
+        top: -15%;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+dialog[close] {
+    animation: myFadeOut .5s ease normal;
+}
+
+@keyframes myFadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.modalHeader {
+    padding: 10px 0;
+    border-bottom: 1px solid #cccccc;
+    font-size: 1.5rem;
+    color: #b19d56;
+    font-weight: bolder;
+}
+
+.modalCard {
+    margin: 15px 0;
+    border-radius: 5px;
+    padding: 0 0 15px 0;
+}
+
+.card-body {
+    padding: 0px 15px;
+}
+
+.modalFooter {
+    padding: 10px 0;
+    border-top: 1px solid #cccccc;
+}
+
+.closeModal,
+.closeModal2 {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.closeModal:hover,
+.closeModal2:hover {
+    transform: scale(1.2);
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 25px;
+    height: 12px;
+    appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px #00000050;
+    transition: .3s;
+    cursor: pointer;
+    top: 3px;
+}
+
+input:checked[type='checkbox'] {
+    background: #b19d56;
+}
+
+input[type='checkbox']:focus {
+    border-color: #b19d56;
+    box-shadow: 0px 0px 3px 3px #b19d5650;
+}
+
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    top:0;
+    left: 0;
+    background: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px #00000020;
+    transition: .3s;
+}
+
+input:checked[type="checkbox"]:before {
+    left: 12px;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.submit1,
+.form-submit {
+    width: 100px;
+    height: 40px;
+}
+
+.changeBtn {
+    width: 200px;
+    height: 40px;
+}
+
+/* MEDIA QUERIES FOR SMALLER SIZES */
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #modal1,
+    #modal2 {
+        width: 90vw;
+    }
+
+    .customBtn {
+        margin-bottom: 0px;
+    }
+
+    .customBtn2 {
+        margin: 15px 0 0 0;
+        display: block;
+    }
+
+    .text-red {
+        font-size: .6rem;
+        margin-left: 2px;
+        bottom: 10px;
+    }
+    #validate {
+        margin-left: 5px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    #modal1,
+    #modal2 {
+        width: 80vw;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+    #modal1,
+    #modal2 {
+        width: 60vw;
+    }
+}
+
+
